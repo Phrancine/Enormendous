@@ -1,0 +1,404 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Enormendous Snowball</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Overpass:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    /*.book {*/
+    /*  display:flex;*/
+    /*  width:100vw;*/
+    /*}*/
+
+    .page {
+      width:100vw;
+      height:100vh;
+      border-bottom:1px solid #000;
+      background-size: contain;
+      background-position:bottom;
+      position:relative;
+      background-repeat:no-repeat;
+
+    }
+
+    .page.is-selected .text {
+      transition-duration: 0s;
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+
+
+    .pagetitle {
+      background-image:url('img/Backgound 1.png');
+    }
+
+    .page1 {
+      background-image:url('img/row1.png');
+    }
+    .page2 {
+      background-image:url('img/row2.png');
+    }
+    .page3 {
+      background-image:url('img/row3.png');
+    }
+    .page4 {
+      background-image:url('img/row4.png');
+    }
+    .page5 {
+      background-image:url('img/row5.png');
+    }
+    .page6 {
+      background-image:url('img/row6.png');
+    }
+    .page7 {
+      background-image:url('img/row7.png');
+    }
+    .page8 {
+      background-image:url('img/row8.png');
+    }
+    .page9 {
+      background-image:url('img/row9.png');
+    }
+    .page10 {
+      background-image:url('img/row10.png');
+    }
+    .page11 {
+      background-image:url('img/row11.png');
+    }
+    .page12 {
+      background-image:url('img/row12.png');
+    }
+    .page13 {
+      background-image:url('img/row13.png');
+    }
+    .page14 {
+      background-image:url('img/row14.png');
+    }
+    .page15 {
+      background-image:url('img/row15.png');
+    }
+    .page16 {
+      background-image:url('img/row16.png');
+    }
+    .page17 {
+      background-image:url('img/row17.png');
+    }
+    .page18 {
+      background-image:url('img/row18.png');
+    }
+
+
+    .page-number {
+      font-size:40px;
+      padding:1em;
+      position:absolute;
+      bottom:0; left:0;
+      z-index: 1;
+      font-family: 'Concert One', cursive;
+
+    }
+
+
+    .text {
+      transition: all 0.75s ease-out;
+      font-size:40px;
+      padding:1em;
+      position:absolute;
+      bottom:0; right:0;
+      z-index: 1;
+      background-color: rgba(111,127,140,0.55);
+      color: #fff;
+      transform: translateX(50vw);
+      opacity: 0;
+      font-family: 'Concert One', cursive;
+
+    }
+
+
+  </style>
+
+</head>
+
+<!--
+
+  BOOK
+    —PAGE
+      —TEXT
+    —PAGE
+      —TEXT
+      -->
+
+<body>
+
+    <div class="book">
+
+title
+      <div class="page title">
+        <p class="text">
+        The Enormendous Snowball<br>
+       Story by Michon Trapman <br>
+        Illustrations by Francine Larsen <br>
+        Progress Images<br>
+        Copyright of Michon Trapman and Francine Larsen <br>
+        
+      </p>
+
+      </div>
+
+      <div class="page page1">
+        <div class="page-number">1</div>
+
+
+        <p class="text">
+        The winter day was perfect<br>
+        The weather was just right<br>
+        Packing snow they called it<br>
+        Had fallen the previous night<br>
+      </p>
+
+      </div>
+
+      <div class="page page2">
+        <div class="page-number">2</div>
+
+        <p class="text">
+        The kids they were excited<br>
+        Dressed in mittens and in hats<br>
+        Meeting on the highest hillh<br>
+        Said “Come on, let’s build it fast!”<br>
+      </p>
+      </div>
+      <div class="page page3">
+        <div class="page-number">3</div>
+
+        <p class="text">
+        Starting with just a snowball<br>
+        They rolled it round and round<br>
+        All across the vast hilltop<br>
+        On the bright and snowy ground<br>
+      </p>
+      </div>
+      <div class="page page4">
+        <div class="page-number">4</div>
+
+        <p class="text">
+        “We will make a giant snowman<br>
+        The biggest that can be!”<br>
+        Said they grunting and pushing<br>
+        Working with industrious glee<br>
+      </p>
+      </div>
+       <div class="page page5">
+        <div class="page-number">5</div>
+
+        <p class="text">
+        It grew bigger and wider<br>
+        And with each roll it became<br>
+        Far too big to push with few<br>
+        They cried “help!” and many came<br>
+      </p>
+      </div>   
+      <div class="page page6">
+        <div class="page-number">6</div>
+
+        <p class="text">
+        Close to the edge they rolled it<br>
+        So all in the town could see<br>
+        Got stuck and stopped moving<br>
+        They pushed, backed against a tree<br>
+      </p>
+      </div>
+      <div class="page page7">
+        <div class="page-number">7</div>
+
+        <p class="text">
+        It resisted for a moment<br>
+        Moving inches but not a lot<br>
+        And then before they knew it<br>
+        It took off like a great shot<br>
+      </p>
+      </div>
+      <div class="page page8">
+        <div class="page-number">8</div>
+
+        <p class="text">
+        Watching with awe and wonder<br>
+        As the snowball ran away<br>
+        Rolling faster and farther<br>
+        Growing bigger on its way<br>
+      </p>
+      </div>
+      <div class="page page9">
+        <div class="page-number">9</div>
+        <p class="text">
+First it hit a line of trees<br>
+That were planted in the spring<br>
+They were rolled into the ball<br>
+With quite a number of things<br>
+      </p>
+      </div>
+      <div class="page page10">
+          <div class="page-number">10</div>
+        <p class="text">
+A few snow sleds were taken<br>
+And skaters on the ice rink<br>
+Workers by the deep sewers<br>
+Even a large kitchen sink<br>
+      </p>
+      </div>
+      <div class="page page11">
+      <div class="page-number">11</div>
+        <p class="text">
+It rolled down into a street<br>
+Chasing cars and Socks the stray<br>
+Many people shouted loudly<br>
+“Oh no! It’s coming our way”<br>
+      </p>
+      </div>
+      <div class="page page12">
+      <div class="page-number">12</div>
+        <p class="text">
+It kept rolling and rolling<br>
+Taking all in its snowy fold<br>
+Including a group of seniors<br>
+Out for a walk in the cold<br>
+      </p>
+      </div>
+      <div class="page page13">
+        <div class="page-number">13</div>
+        <p class="text">
+How will we ever stop it?<br>
+The town people cried in fear<br>
+“No idea” said some buskers<br>
+Let’s hope something will appear<br>
+      </p>
+      </div>
+      <div class="page page14">
+        <div class="page-number">14</div>
+        <p class="text">
+The kids knew what was needed<br>
+And told the adults their plan<br>
+Parking their cars in the road<br>
+With one or two mini vans<br>
+      </p>
+      </div>
+      <div class="page page15">
+        <div class="page-number">15</div>
+        <p class="text">
+The snowball it kept rolling<br>
+Following the path they made<br>
+It bounded off the parked cars<br>
+Right past the town arcade<br>
+      </p>
+      </div>
+      <div class="page page16">
+        <div class="page-number">16</div>
+        <p class="text">
+It turned and it swerved<br>
+Following their clever trail<br>
+Heading south then due north<br>
+All hoping it would not fail<br>
+      </p>
+      </div>
+      <div class="page page17">
+        <div class="page-number">17</div>
+        <p class="text">
+It rounded the last corner<br>
+The snowball racing faster<br>
+And all did hold their breath<br>
+Hoping for no disaster<br>
+      </p>
+      </div>
+      <div class="page page18">
+<!--        <img src="img/rowTwo.png" alt="">-->
+        <p class="text">
+To be Continued<br>
+
+      </p>
+      </div>
+    
+
+
+
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script>
+    $(function() {
+      var $carousel = $('.book').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+      });
+
+//       var $pages = $carousel.find('.page');
+// // get transform property
+// //       var docStyle = document.documentElement.style;
+// //       var transformProp = typeof docStyle.transform == 'string' ?
+// //         'transform' : 'WebkitTransform';
+//       var transformProp = 'transform'
+// // get Flickity instance
+//       var flkty = $carousel.data('flickity');
+//
+//       $carousel.on( 'change.flickity', function(event, index) {
+//         // flkty.slides.forEach( function( event, index ) {
+//         $pages.forEach(function($page, pageIndex) {
+//           if (pageIndex === index ) {
+//             $(this).find('.text').addClass('')
+//           }
+//         })
+//         console.log($pages[index]);
+//           console.log(index);
+
+          // if (flkty.selectedIndex == i) {
+          //   $(this).find('.text').addClass('out');
+          // }
+          // var img = $imgs[i];
+          // var x = ( slide.target + flkty.x ) * -1/3;
+          // img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+        // });
+      // });
+    })
+   </script>
+
+
+
+</body>
+
+</html>
